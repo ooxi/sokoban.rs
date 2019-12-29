@@ -1,0 +1,9 @@
+---
+base: fedora:31
+install:
+ - cargo
+ - make
+ - rust
+ - rustfmt
+---
+
