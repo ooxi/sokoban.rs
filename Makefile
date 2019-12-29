@@ -1,5 +1,12 @@
 .PHONY: all
-all: core
+all: cli core
+
+
+.PHONY: cli
+cli: core
+	(cd 'cli' && cargo build)
+	(cd 'cli' && cargo test)
+	(cd 'cli' && cargo fmt -- --check)
 
 
 .PHONY: core

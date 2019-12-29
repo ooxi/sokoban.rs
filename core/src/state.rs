@@ -8,7 +8,11 @@ pub struct State {
 }
 
 impl State {
-    fn transition(state: State) -> Result<State, &'static str> {
+    pub fn new(a: Tile, b: Tile, c: Tile) -> State {
+        return State { a: a, b: b, c: c };
+    }
+
+    pub fn transition(state: State) -> Result<State, &'static str> {
         match state {
             // Player cannot push a crate into another crate
             State {

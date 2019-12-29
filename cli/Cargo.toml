@@ -1,0 +1,8 @@
+[package]
+name = "cli"
+version = "0.1.0"
+authors = ["ooxi <violetland@mail.ru>"]
+edition = "2018"
+
+[dependencies]
+core = { path = "../core" }
