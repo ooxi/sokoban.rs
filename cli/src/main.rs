@@ -25,8 +25,8 @@ impl Print for World {
     fn print(&self) {
         let area = self.area();
 
-        for y in (area.upperLeft().y() - 1)..(area.lowerRight().y() + 2) {
-            for x in (area.upperLeft().x() - 1)..(area.lowerRight().x() + 2) {
+        for y in (area.upper_left().y() - 1)..(area.lower_right().y() + 2) {
+            for x in (area.upper_left().x() - 1)..(area.lower_right().x() + 2) {
                 let position = Position::new(x, y);
                 let tile = self.get_tile(position);
 

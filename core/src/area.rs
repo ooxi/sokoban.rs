@@ -1,23 +1,23 @@
 use crate::position::Position;
 
 pub struct Area {
-    upperLeft: Position,
-    lowerRight: Position,
+    upper_left: Position,
+    lower_right: Position,
 }
 
 impl Area {
-    pub fn new(upperLeft: Position, lowerRight: Position) -> Area {
+    pub fn new(upper_left: Position, lower_right: Position) -> Area {
         return Area {
-            upperLeft: upperLeft,
-            lowerRight: lowerRight,
+            upper_left: upper_left,
+            lower_right: lower_right,
         };
     }
 
-    pub fn upperLeft(&self) -> Position {
-        return self.upperLeft;
+    pub fn upper_left(&self) -> Position {
+        return self.upper_left;
     }
 
-    pub fn lowerRight(&self) -> Position {
-        return self.lowerRight;
+    pub fn lower_right(&self) -> Position {
+        return self.lower_right;
     }
 }
